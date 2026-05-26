@@ -1,116 +1,88 @@
-*{
+* {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
-
 }
 
-.container{
-background-color:white;
-height: 100vh;
-display: flex;
-padding: 10px;
+
+.container {
+  background-color: white;
+  min-height: 100vh;
+  width: 100%;      
+  display: flex;
+  justify-content: center;
+  padding: 10px;
 }
-.main-top{
+
+
+.main-layout {
+  display: flex;
   flex-direction: column;
-  display: flex;
-flex:4;
-gap: 10px;
+  width: 100%;      
+  max-width: 1400px; 
+  padding: 10px;
+}
 
+.main-top {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  width: 100%;       
 }
-.left-1-div{
-flex: 2;
-border: 2px solid gray;
-border-radius: 10px;
-gap: 10px;
-margin: 10px;
+
+.left-1-div, .right-1-div, .left-2-div, .right-2-div {
+  flex: 1; 
+  border: 2px solid gray;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+  display: flex;         
+  flex-direction: column;
 }
-.nav-left{
-padding: 10px;
-}
-.nav-left h3{
-  font-family:sans-serif;
+
+.nav-left, .nav-right, .nav-left-bottom, .nav-right-bottom {
+  padding: 10px;
+  font-family: sans-serif;
   font-weight: 600;
 }
-.wedding-requisties-left{
 
-}
-.right-1-div{
-flex:2;
-border: 2px solid gray;
-border-radius: 10px;
-gap: 10px;
-margin: 10px;
-}
-.nav-right{
-padding: 10px;
-}
-.nav-right h3{
-  font-family:sans-serif;
-  font-weight: 600;
 
-}
-.images{
+.images {
   display: flex;
-  justify-content: space-evenly;
-gap: 10px;
-
-
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 15px;
+  width: 100%;
+  flex-grow: 1; 
 }
-.images p{
+
+
+.top {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ 
+.images img {
+  border-radius: 10px;
+  width: 100%;       
+  height: 150px;     
+  object-fit: cover; 
+}
+
+.images p {
   font-family: sans-serif;
   font-weight: 500;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+.main-bottom {
   display: flex;
-  align-items: center;
-  justify-content: center;
- padding-top: 20px;
-  
-}
-
-.images img{
-  border-radius: 10px;
-  height: 200px;
-  max-width: 200px;
- }
- 
-.main-bottom{
-display: flex;
-flex-direction: column;
-  flex:4;
-  gap: 10px;
-
-}
-.left-2-div{
-flex:2;
-border: 2px solid gray;
-border-radius: 10px;
-gap: 10px;
-margin: 10px;
-}
-.nav-left-bottom{
-padding: 10px;
-}
-.nav-left-bottom{
-  font-family:sans-serif;
-  font-weight: 600;
-}
-.wedding-requisties-down{
-
-}
-.right-2-div{
-flex:2;
-border: 2px solid gray;
-border-radius: 10px;
-margin: 10px;
-
-}
-.nav-right-bottom{
-padding: 10px;
-}
-.nav-right-bottom h3{
-  font-family:sans-serif;
-  font-weight: 600;
-}
-.wedding-requisties-down{
-
+  flex-direction: row;
+  flex: 1;
+  width: 100%;      
 }

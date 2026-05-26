@@ -18,6 +18,7 @@ function App() {
   return (
     <>
       <div className="container">
+        <div className="main-layout">
         <div className="main-top">
         <div className="left-1-div">
           <div className="nav-left"><h3>Wedding Requisites</h3></div>
@@ -105,11 +106,10 @@ function App() {
 </div>
           </div>
           </div>
-
 </div>
 </div>
 </div>
-
+</div>
       </div>
     </>
   )
